@@ -1,0 +1,174 @@
+/*
+    reset settaggi css
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+COLOR PALETTE i colori del brand MMPERFORMANCETRAINING
+i colori espressi in codice esadecibale, rgb
+#
+#
+#
+https://coolors.co/ff0000-ff7268-ffffff-2d3047
+
+FONT del brand da usare
+BEBAS NEUES
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+*/
+
+html {
+    margin: auto;
+    color: #2d3047;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header {
+    width: 100hv;
+    background-color: red;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu > li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #2d3047;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+menu > h1 {
+    visibility: hidden;
+}
+
+.hero {
+    background-color: #2d3047;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#logo{
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#anello,#logomm {
+    max-width: 100%;
+}
+
+#anello {
+    animation: rotation 4s linear infinite;
+}
+
+#background-hero {
+    width: 1000px;
+}
+
+.content {
+    width:110hv;
+    max-width: 970px;
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+
+.label {
+    z-index: 1;
+    width: 400px;
+    background-color: #ff0000de;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    padding: 20px;
+}
+
+.card > img {
+    z-index: 0;
+    max-width: 100%;
+    height: 300px;
+    height: auto;
+}
+
+.card-text {
+    background-color: red;
+    z-index: 1;
+    background-color: #ff0000de;
+    position: absolute;
+    bottom: 10%;
+    max-width: 90%;
+    padding: 20px;
+}
+
+/*
+RESPONSIVE A VARIE DIMENSIONI
+815px per la variazione del menu
+*/
+
+@media (max-width: 815px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #anello,#logomm {
+        visibility: hidden;
+    }
+    
+
+}
+
+/*
+ANIMATION
+*/
+
+@keyframes rotation {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
