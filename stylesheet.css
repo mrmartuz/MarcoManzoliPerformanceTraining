@@ -126,9 +126,6 @@ menu > h1 {
 
 .card > img {
     z-index: 0;
-    max-width: 100%;
-    height: 300px;
-    height: auto;
 }
 
 .card-text {
@@ -138,7 +135,19 @@ menu > h1 {
     position: absolute;
     bottom: 10%;
     max-width: 90%;
+    max-height: 350px;
     padding: 20px;
+    overflow: hidden;
+}
+
+.card-text > p {
+    max-height: 350px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
 }
 
 /*
@@ -157,7 +166,13 @@ RESPONSIVE A VARIE DIMENSIONI
         visibility: hidden;
     }
     
+    .label {
+        width: 300px;
+    }
 
+    #message {
+        width: 300px;
+    }
 }
 
 /*
