@@ -13,10 +13,10 @@
 /*
 COLOR PALETTE i colori del brand MMPERFORMANCETRAINING
 i colori espressi in codice esadecibale, rgb
-#
-#
-#
-https://coolors.co/ff0000-ff7268-ffffff-2d3047
+#007a14 VERDE DELLA SALUTE, DEL BENESSERE
+#ff0000 ROSSO DEL SANGUE, DELL'ATTIVITA
+#19535f BLU SCURO
+https://coolors.co/visualizer/007a14-ff0000-19535f
 
 FONT del brand da usare
 BEBAS NEUES
@@ -31,9 +31,13 @@ html {
     font-family: 'Bebas Neue', sans-serif;
 }
 
+body {
+    background-color: white;
+}
+
 header {
     width: 100hv;
-    background-color: red;
+    background-color: #19535f;
 }
 
 .menu {
@@ -52,7 +56,7 @@ header {
 .menu a {
     text-decoration: none;
     font-size: 24px;
-    color: #2d3047;
+    color: #ff0000;
 }
 
 .menu a:hover {
@@ -65,14 +69,10 @@ h1 {
     font-size: 48px;
 }
 
-menu > h1 {
-    visibility: hidden;
-}
-
 .hero {
     background-color: #2d3047;
     width: 100%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -104,6 +104,7 @@ menu > h1 {
     width:110hv;
     max-width: 970px;
     margin: auto;
+    background-color: #19535f;
 }
 
 .card {
@@ -125,7 +126,7 @@ menu > h1 {
 }
 
 .label > h2 {
-    color: #2d3047
+    color: white;
 }
 
 .card > img {
@@ -145,13 +146,19 @@ menu > h1 {
 
 .card-text > p {
     max-height: 350px;
-    color: white;
+    color: #2d3047;
 }
 
 .card a {
     text-decoration: none;
-    font-size: 32px;
+    font-size: 48px;
     color: white;
+
+}
+
+#card5 > .card-text{
+    width: 800px;
+    right: 0;
 }
 /*
 SETTAGGI CSS PER INPUT FORM PER EMAIL
@@ -180,6 +187,10 @@ RESPONSIVE A VARIE DIMENSIONI
 
     #message {
         width: 300px;
+    }
+
+    .card a {
+        font-size: 32px;
     }
 }
 
