@@ -103,13 +103,13 @@ h1 {
     width: 1000px;
 }
 
-.content {
+.section-content {
     width:110hv;
     max-width: 970px;
     margin: auto;
 }
 
-.card {
+.article {
     position: relative;
     margin-top: 20px;
     width: 100%;
@@ -117,7 +117,7 @@ h1 {
     overflow: hidden;
   }
 
-.card-label {
+.article-title {
     z-index: 1;
     width: 400px;
     background-color: #ff0000ab;
@@ -127,20 +127,20 @@ h1 {
     padding: 20px;
 }
 
-.card-label > h2,h4 {
+.article-title > h2,h4 {
     color: #19535f;
 }
 
-.card-label > h2 {
+.article-title > h2 {
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #2d3047;
 }
 
-.card > img {
+.article > img {
     z-index: 0;
 }
 
-.card-text {
+.article-text {
     z-index: 1;
     background-color: #ff0000ab;
     position: absolute;
@@ -151,19 +151,52 @@ h1 {
     overflow: hidden;
 }
 
-.card-text > p {
+.article-text > p {
     max-height: 350px;
     color: #19535f;
 }
 
-.card a {
+.article a {
     text-decoration: none;
     font-size: 48px;
     color: white;
 
 }
 
-#card5 > .card-text {
+#article2 > .article-text {
+    right: 30%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-container {
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+    width: 90%;
+    height: 60%;
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 218px;
+    min-width: 218px;
+    height: 305px;;
+}
+
+#article5 > .article-text {
     width: 800px;
     right: 0;
     margin-right: 8%;
@@ -193,16 +226,16 @@ RESPONSIVE A VARIE DIMENSIONI
         text-align: center;
     }
 
-    .card-label {
+    .article-title {
         width: 300px;
     }
 
-    #message {
-        width: 300px;
-    }
-
-    .card a {
+    .article a {
         font-size: 32px;
+    }
+
+    #article5 > .article-text {
+        margin-right: 5%;
     }
 }
 
