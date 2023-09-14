@@ -68,6 +68,8 @@ header {
 
 h1 {
     font-size: 48px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #2d3047;
 }
 
 .hero {
@@ -115,7 +117,7 @@ h1 {
     overflow: hidden;
   }
 
-.label {
+.card-label {
     z-index: 1;
     width: 400px;
     background-color: #ff0000ab;
@@ -125,10 +127,14 @@ h1 {
     padding: 20px;
 }
 
-.label > h2,h4 {
+.card-label > h2,h4 {
     color: #19535f;
 }
 
+.card-label > h2 {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #2d3047;
+}
 
 .card > img {
     z-index: 0;
@@ -160,7 +166,10 @@ h1 {
 #card5 > .card-text {
     width: 800px;
     right: 0;
+    margin-right: 8%;
+    border-radius: 5px;
     color: #19535f;
+    animation: highlight 4s linear infinite;
 }
 
 /*
@@ -184,7 +193,7 @@ RESPONSIVE A VARIE DIMENSIONI
         text-align: center;
     }
 
-    .label {
+    .card-label {
         width: 300px;
     }
 
@@ -208,4 +217,19 @@ ANIMATION
     100% {
       transform: rotate(0deg);
     }
-  }
+}
+
+@keyframes highlight {
+    0% {
+        background-color: #ff0000ab;
+        scale: 100%;
+      }
+      50% {
+        background-color: #ff2600d3;
+        scale: 102%;
+      }
+      100% {
+        background-color: #ff0000ab;
+        scale: 100%;
+      }
+}
