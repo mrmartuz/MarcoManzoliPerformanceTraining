@@ -15,7 +15,8 @@ COLOR PALETTE i colori del brand MMPERFORMANCETRAINING
 i colori espressi in codice esadecibale, rgb
 #007a14 VERDE DELLA SALUTE, DEL BENESSERE
 #ff0000 ROSSO DEL SANGUE, DELL'ATTIVITA
-#19535f BLU SCURO
+#19535f BLU 
+#2d3047 BLUSCURO
 https://coolors.co/visualizer/007a14-ff0000-19535f
 
 FONT del brand da usare
@@ -32,12 +33,12 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color:#19535f;
 }
 
 header {
     width: 100hv;
-    background-color: #ff0000;
+    background-color: white;
 }
 
 .menu > ul {
@@ -62,8 +63,9 @@ header {
 
 .menu a:hover {
     text-decoration: none;
-    font-size: 24px;
-    color: white;
+    color: #ff0000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2d3047;
 }
 
 h1 {
@@ -124,20 +126,18 @@ h1 {
 .article-title {
     z-index: 1;
     width: 400px;
-    background-color: #ff0000ab;
+    background-color: rgba(255, 255, 255, 0.822);
     position: absolute;
     right: 0;
     top: 10%;
     padding: 20px;
 }
 
-.article-title > h2,h4 {
-    color: #19535f;
-}
 
 .article-title > h2 {
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #2d3047;
+    color: #ff0000;
 }
 
 .article > img {
@@ -146,7 +146,7 @@ h1 {
 
 .article-text {
     z-index: 1;
-    background-color: #ff0000ab;
+    background-color: rgba(255, 255, 255, 0.733);
     position: absolute;
     bottom: 10%;
     max-width: 90%;
@@ -176,13 +176,13 @@ h1 {
 }
 
 .card-container {
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     width: 90%;
     height: 60%;
     z-index: 1;
     position: absolute;
-    top: 35%;
+    top: 50%;
     right: 5%;
     display: flex;
     flex-direction: row;
@@ -196,8 +196,8 @@ h1 {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 218px;
-    min-width: 218px;
-    height: 305px;
+    min-width: 198px;
+    height: 285px;
     max-height: 80%;
     display: flex;
     flex-direction: column;
@@ -205,6 +205,7 @@ h1 {
     align-content: center;
     overflow: hidden;
     transform: transform 0.5s;
+    padding: 10px;
 }
 
 .card:hover {
@@ -212,7 +213,10 @@ h1 {
 }
 
 .card-title {
-    background-color: #51945c;
+    background-color: white;
+    color: #ff0000;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #2d3047;
     top:0;
     height: 20%;
     width: 100%;
